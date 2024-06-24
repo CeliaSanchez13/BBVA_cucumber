@@ -86,7 +86,13 @@ pero así tambien estaría bien
         cy.injectAxe();
         cy.checkA11y(elementLocator)
       }
-  }
+  
+
+    checkUrlValueStatus(urlValue, status) {
+      cy.url().should(status, urlValue)
+    }
+    
+}
   
   
   

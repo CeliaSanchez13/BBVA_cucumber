@@ -74,4 +74,11 @@ Then ('I test the accesibility on the element with locator {string}', (elementLo
   commonPage.testAccesibilityOnElement(elementLocator)
 })
 
+When("I check that the url value {string} is {string}", (urlValue, status) => {
+  commonPage.checkUrlValueStatus(urlValue, status)
+  // status value must be : include or not include
+})
+
+
+
 
